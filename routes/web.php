@@ -11,15 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/test/{name?}', function ($name = null) {
-    return 'Hello world ' . $name;
-});
-Route::get('/t/t/{id?}', function ($id=0) {
-    return 'User'. $id;
-});
-Route::get('user/{id}/', function ($id) {
-return 'User'. $id;
-})->where(['id'=>'[A-Za-z0-9]+']);
+Route::get('/', 'BaseController@getIndex');
+//Route::get('/test/{name?}', function ($name = null) {
+    //return 'Hello world ' . $name;
+//});
+//Route::get('/t/t/{id?}', function ($id=0) {
+    //return 'User'. $id;
+//});
+//Route::get('user/{id}/', function ($id) {
+//return 'User'. $id;
+//)->where(['id'=>'[A-Za-z0-9]+']);
