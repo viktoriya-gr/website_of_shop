@@ -1,1 +1,8 @@
-body {background: lightpink; color: darkblue;}
+body {
+    color: darkred;
+    background-color: lightgoldenrodyellow;
+
+}
+.carousel{
+    text-align:center;
+}
